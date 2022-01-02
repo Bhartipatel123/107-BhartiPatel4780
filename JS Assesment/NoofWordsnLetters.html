@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function myFunc() {
+              input=document.getElementById("textBox").value.trim();
+              strArray=input.split(" ");
+              document.getElementById("NoOfWords").innerHTML ="Number of words = "+strArray.length ;
+
+              document.getElementById("NoOfLetters").innerHTML="Number of letters ="+(input.length-strArray.length);
+            }
+            </script>
+   
+</head>
+<body>
+<input type = "text" id="textBox">
+<button onclick="myFunc()">Click</button>
+<p id="NoOfWords"></p>
+<p id="NoOfLetters"></p>
+</body>
+</html>
